@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+#container{
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    &--3{
+        -webkit-line-clamp: 3;
+    }
+    &--4{
+        -webkit-line-clamp: 4;
+    }
+    &--5{
+        -webkit-line-clamp: 5;
+    }
+}
+.text-bold{
+    font-weight: bold;;
+}

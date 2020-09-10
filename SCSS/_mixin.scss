@@ -1,0 +1,37 @@
+
+@mixin line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+
+@mixin media-xl {
+    @media screen and (min-width : 1200px) {
+        @content;
+    }
+
+}
+@mixin media-lg {
+    @media screen and (min-width : 992px) {
+        @content;
+    }
+
+}
+@mixin media-md {
+    @media screen and (min-width : 768px) {
+        @content;
+    }
+
+}
+@mixin media-sm {
+    @media screen and (min-width : 576px) {
+        @content;
+    }
+
+}
+@mixin media-ssm {
+    @media screen and (max-width : 575px) {
+        @content;
+    }
+}

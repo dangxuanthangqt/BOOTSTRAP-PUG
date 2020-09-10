@@ -1,0 +1,37 @@
+mixin social-item(val)
+    li.footer__social__item
+        i(class=val)
+mixin links-item(val)
+    li.footer__links__item.mb-3
+        a(href='#')= val
+footer.footer.bg-dark.mt-5.text-light
+    .d-flex.flex-wrap.p-5.justify-content-between
+        .col-md-3
+            h2.mb-5 Barberia
+            p Lorem ipsum dolor sit
+            p AP 45 65451
+            p
+                span.text-bold Phone :
+                |  + 0979475216
+            p
+                span.text-bold Email :
+                |  Dnagxuanthangqt@gmail.com
+            ul.footer__social.d-flex
+                each val in["fab fa-youtube","fab fa-facebook","fab fa-youtube","fab fa-facebook"]
+                    +social-item(val)
+
+        .col-md-3
+            h2.mb-5 Useful links
+            ul.footer__links
+                each val in["fab fa-youtube","fab fa-facebook","fab fa-youtube","fab fa-facebook"]
+                    +links-item(val)
+               
+        .col-md-5
+            h2.mb-5 Our newletter
+            p
+                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi,
+                | excepturi tenetur off
+            form.form-inline.my-lg-0.pt-0
+                input.form-control.mr-md-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success.my-2.my-sm-0(type='submit')
+                    | Search

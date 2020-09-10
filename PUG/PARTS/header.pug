@@ -1,0 +1,22 @@
+mixin nav-item(val)
+    li.nav-item.mr-4
+         a#nav-link.nav-link(href='#')= val
+header.header
+    nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+        .container-fluid
+            a.navbar-brand.text-info(href='#') Bootstrap
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav.ml-auto
+                    each val in ["Home", "About", "Gallery","Service", "Pricing", "Contact"]
+                        +nav-item(val)
+                    
+                    //- li.nav-item.mr-4
+                    //-     a#nav-link.nav-link(href='#') Gallery
+                    //- li.nav-item.mr-4
+                    //-     a#nav-link.nav-link(href='#') Service
+                    //- li.nav-item.mr-4
+                    //-     a#nav-link.nav-link(href='#') Pricing
+                    //- li.nav-item.mr-4
+                    //-     a#nav-link.nav-link(href='#') Contact

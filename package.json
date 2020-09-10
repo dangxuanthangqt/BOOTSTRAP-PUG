@@ -1,0 +1,14 @@
+{
+  "name": "salon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"sass ./SCSS/main.scss ./CSS/main.css --watch",
+    "pug":"pug -w ./PUG/index.pug -o ./HTML -P",
+    "dev":"npm run pug & npm run scss"
+  },
+  "author": "",
+  "license": "ISC"
+}
